@@ -1,0 +1,16 @@
+apply plugin: 'groovy'
+
+dependencies {
+  compileOnly localGroovy()
+
+  implementation gradleApi()
+  implementation 'com.android.tools.build:gradle:3.0.1'
+  implementation 'org.javassist:javassist:3.23.1-GA'
+}
+
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
+}
